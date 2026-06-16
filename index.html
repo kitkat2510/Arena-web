@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!--esse é um documento HTML 5-->
+<html lang="Pt-BR"> <!-- A lingua é Português do Brasil -->
+
+<head> <!--Aqui fica as configurações da página-->
+    <meta charset="UTF-8"> <!--A página passa a trabalhar com acentos e caracteres especiais-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--aqui prepara a página para melhorar a responsividade para os diversos dispositivos que existem -->
+    <title>Arena</title> <!--texto que fica na aba do site-->
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body> <!--É toda parte visível do site-->
+
+    <main class="container-principal">
+        <section class=" tela tela-apresentacao">
+
+            <div class="apresentacao-conteudo">
+                <p class="etiqueta-projeto">Projeto HTML, CSS e Java Script</p>
+
+                <h1 class="titulo-principal">Arena</h1>
+
+                <p class="descricao">Escolha seu jogador, conheça seus atributos e entre na arena para travar batalhas
+                    épicas contra adversários poderosos. Use ataques, habilidades especiais e estratégias de defesa para
+                    provocar quem é o verdadeiro campeão. </p>
+
+                <button class="botao" id="botao-iniciar" type="button"> Iniciar</button>
+            </div>
+            <div class="apresentacao-visual"></div>
+            <img src="src/img/ladodireito-roxyandxaden.png" alt="">
+
+        </section>
+
+
+        <section class=" tela tela-selecao ">
+            <div class="cabecalho">
+                <p class="cta">
+                    Selecione um personagem </p>
+
+                <button class="botao" id="botao-selecionar" type="button">Iniciar</button>
+            </div>
+
+            <div class="container-selecao">
+                <div class="carta-personagem roxy selecionado" id="carta-personagem"></div>
+
+                <div class="carta-personagem xaden" id="carta-personagem"></div>
+
+                <div class="carta-personagem megan" id="carta-personagem"></div>
+
+                <div class="carta-personagem caos" id="carta-personagem"></div>
+
+                <div class="carta-personagem michael" id="carta-personagem"></div>
+
+                <div class="carta-personagem calleo" id="carta-personagem"></div>
+
+            </div>
+        </section>
+
+        <section class="tela tela-confirmacao ativa">
+            <div class="confirmacao-visual">
+                <img src="./src/img/roxycomfundo.png" alt="Personagem selecionado" class="imagem-personagem-confirmado"
+                    id="imagem-personagem-confirmado">
+            </div>
+
+            <div class="confirmacao-conteudo">
+                <h2 class="personagem-nome"> Roxy Kane</h2>
+
+                <p class="personagem-descricao"> Roxy Kane cresceu sob o regime brutal de Caos e viu seus pais serem
+                    executados por participarem da resistência. Marcada pela perda e pela sobrevivência, passou anos
+                    lutando apenas por si mesma até perceber que poderia se tornar algo maior. Determinada, impulsiva e
+                    ferozmente protetora, ela lidera os Renegados como símbolo de esperança para os oprimidos, enquanto
+                    trava uma batalha interna constante para não deixar que o ódio a transforme no mesmo tipo de monstro
+                    que jurou destruir.
+                </p>
+            </div>
+
+            <div class="painel-tributos">
+                <div class="atributo atributo-ataque" id="atributo-ataque">
+
+                    <span class="atributo-nome">Ataque</span>
+
+                    <div class="barra-preenchimento">
+                        <div class="barra-ataque" id="barra-ataque"></div>
+                    </div>
+
+                    <span class="atributo-valor" id="atributo-valor"></span>
+                </div>
+            </div>
+
+            <button class="botao" id="botao-confirmar" type="button" >
+                confirmar
+            </button>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
